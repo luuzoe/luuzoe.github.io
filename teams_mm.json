@@ -1,0 +1,824 @@
+{
+ "teams": {
+  "598": {
+   "en": "1. FC Union Berlin",
+   "abbr": "FCU",
+   "mm": "ယူနီယံဘာလင်"
+  },
+  "103": {
+   "en": "AC Milan",
+   "abbr": "MIL",
+   "mm": "အေစီမီလန်"
+  },
+  "2726": {
+   "en": "ADO Den Haag",
+   "abbr": "ADO",
+   "mm": "ဒန်ဟက်"
+  },
+  "887": {
+   "en": "AEK Athens",
+   "abbr": "AEK",
+   "mm": "အေအီးကေအေသင်"
+  },
+  "349": {
+   "en": "AFC Bournemouth",
+   "abbr": "BOU",
+   "mm": "ဘုန်းမောက်"
+  },
+  "172": {
+   "en": "AJ Auxerre",
+   "abbr": "AUX",
+   "mm": "အောက်ဆဲ"
+  },
+  "174": {
+   "en": "AS Monaco",
+   "abbr": "MON",
+   "mm": "မိုနာကို"
+  },
+  "104": {
+   "en": "AS Roma",
+   "abbr": "ROMA",
+   "mm": "ရိုးမား"
+  },
+  "140": {
+   "en": "AZ Alkmaar",
+   "abbr": "AZ",
+   "mm": "အဲဇက်အယ်လ်ခ်မား"
+  },
+  "21607": {
+   "en": "Académico de Viseu",
+   "abbr": "ACV",
+   "mm": "ဗီဆူး"
+  },
+  "139": {
+   "en": "Ajax Amsterdam",
+   "abbr": "AJA",
+   "mm": "အေဂျက်စ်"
+  },
+  "96": {
+   "en": "Alavés",
+   "abbr": "ALA",
+   "mm": "အလာဗတ်စ်"
+  },
+  "21613": {
+   "en": "Alverca",
+   "abbr": "ALV",
+   "mm": "အဲလ်ဗာကာ"
+  },
+  "441": {
+   "en": "Anderlecht",
+   "abbr": "AND",
+   "mm": "အန်ဒါလက်ချ်"
+  },
+  "7868": {
+   "en": "Angers",
+   "abbr": "ANG",
+   "mm": "အွန်ဂျေး"
+  },
+  "20024": {
+   "en": "Ararat-Armenia",
+   "abbr": "ARA",
+   "mm": "အာရာရတ်-အာမေးနီးယား"
+  },
+  "15784": {
+   "en": "Arouca",
+   "abbr": "FCA",
+   "mm": "အာရူကာ"
+  },
+  "359": {
+   "en": "Arsenal",
+   "abbr": "ARS",
+   "mm": "အာဆင်နယ်"
+  },
+  "362": {
+   "en": "Aston Villa",
+   "abbr": "AVL",
+   "mm": "အက်စတွန်ဗီလာ"
+  },
+  "105": {
+   "en": "Atalanta",
+   "abbr": "ATA",
+   "mm": "အတ္တလန္တာ"
+  },
+  "93": {
+   "en": "Athletic Club",
+   "abbr": "ATH",
+   "mm": "အက်သလတစ်ဘီလ်ဘာအို"
+  },
+  "1068": {
+   "en": "Atlético Madrid",
+   "abbr": "ATM",
+   "mm": "အက်သလက်တီကိုမက်ဒရစ်"
+  },
+  "83": {
+   "en": "Barcelona",
+   "abbr": "BAR",
+   "mm": "ဘာစီလိုနာ"
+  },
+  "131": {
+   "en": "Bayer Leverkusen",
+   "abbr": "B04",
+   "mm": "လီဗာကူဆင်"
+  },
+  "132": {
+   "en": "Bayern Munich",
+   "abbr": "MUN",
+   "mm": "ဘိုင်ယန်"
+  },
+  "1929": {
+   "en": "Benfica",
+   "abbr": "SLB",
+   "mm": "ဘန်ဖီကာ"
+  },
+  "1895": {
+   "en": "Besiktas",
+   "abbr": "BES",
+   "mm": "ဘီရှစ်တပ်စ်"
+  },
+  "2980": {
+   "en": "Bodo/Glimt",
+   "abbr": "BODO",
+   "mm": "ဘိုဒိုဂလင့်မ်"
+  },
+  "107": {
+   "en": "Bologna",
+   "abbr": "BOL",
+   "mm": "ဘိုလော့နာ"
+  },
+  "124": {
+   "en": "Borussia Dortmund",
+   "abbr": "DOR",
+   "mm": "ဒေါ့မန်"
+  },
+  "268": {
+   "en": "Borussia Mönchengladbach",
+   "abbr": "BMG",
+   "mm": "ဂလက်ဘတ်"
+  },
+  "2994": {
+   "en": "Braga",
+   "abbr": "SCB",
+   "mm": "ဘရာဂါ"
+  },
+  "337": {
+   "en": "Brentford",
+   "abbr": "BRE",
+   "mm": "ဘရန့်ဖို့ဒ်"
+  },
+  "6997": {
+   "en": "Brest",
+   "abbr": "BRE",
+   "mm": "ဘရက်စ်"
+  },
+  "331": {
+   "en": "Brighton & Hove Albion",
+   "abbr": "BHA",
+   "mm": "ဘရိုက်တန်"
+  },
+  "3472": {
+   "en": "C.D. Nacional",
+   "abbr": "CDN",
+   "mm": "နာစီယွန်နယ်"
+  },
+  "2925": {
+   "en": "Cagliari",
+   "abbr": "CAG",
+   "mm": "ကာဂလီယာရီ"
+  },
+  "21581": {
+   "en": "Casa Pia",
+   "abbr": "CPAC",
+   "mm": "ကာဆာပီယာ"
+  },
+  "85": {
+   "en": "Celta Vigo",
+   "abbr": "CEL",
+   "mm": "ဆယ်လ်တာဗီဂို"
+  },
+  "256": {
+   "en": "Celtic",
+   "abbr": "CEL",
+   "mm": "ဆဲလ်တစ်"
+  },
+  "363": {
+   "en": "Chelsea",
+   "abbr": "CHE",
+   "mm": "ချယ်လ်ဆီး"
+  },
+  "570": {
+   "en": "Club Brugge",
+   "abbr": "BRU",
+   "mm": "ကလပ်ဘရုဂေး"
+  },
+  "2572": {
+   "en": "Como",
+   "abbr": "COMO",
+   "mm": "ကိုမို"
+  },
+  "388": {
+   "en": "Coventry City",
+   "abbr": "COV",
+   "mm": "ကိုဗင်ထရီစီးတီး"
+  },
+  "384": {
+   "en": "Crystal Palace",
+   "abbr": "CRY",
+   "mm": "ခရစ္စတယ်ပဲလေ့စ်"
+  },
+  "90": {
+   "en": "Deportivo",
+   "abbr": "DEP",
+   "mm": "ဒီပို့တီဗို"
+  },
+  "597": {
+   "en": "Dinamo Zagreb",
+   "abbr": "DZG",
+   "mm": "ဒီနာမိုဇာဂရက်"
+  },
+  "125": {
+   "en": "Eintracht Frankfurt",
+   "abbr": "SGE",
+   "mm": "ဖရန့်ဖတ်"
+  },
+  "3751": {
+   "en": "Elche",
+   "abbr": "ELC",
+   "mm": "အဲလ်ချီ"
+  },
+  "88": {
+   "en": "Espanyol",
+   "abbr": "ESP",
+   "mm": "အက်စ်ပန်ညောလ်"
+  },
+  "12216": {
+   "en": "Estoril",
+   "abbr": "EPF",
+   "mm": "အက်စ်တိုရီလ်"
+  },
+  "21610": {
+   "en": "Estrela",
+   "abbr": "EST",
+   "mm": "အက်စ်ထရီလာ"
+  },
+  "368": {
+   "en": "Everton",
+   "abbr": "EVE",
+   "mm": "အဲဗာတန်"
+  },
+  "2566": {
+   "en": "Excelsior",
+   "abbr": "EXC",
+   "mm": "အက်ဆဲလ်ရှာ"
+  },
+  "3841": {
+   "en": "FC Augsburg",
+   "abbr": "FCA",
+   "mm": "အော့စ်ဘတ်"
+  },
+  "122": {
+   "en": "FC Cologne",
+   "abbr": "KOE",
+   "mm": "ကိုလုံး"
+  },
+  "12698": {
+   "en": "FC Famalicao",
+   "abbr": "FCF",
+   "mm": "ဖာမလီကောင်"
+  },
+  "145": {
+   "en": "FC Groningen",
+   "abbr": "GRO",
+   "mm": "ဂရိုနင်ဂန်"
+  },
+  "437": {
+   "en": "FC Porto",
+   "abbr": "FCP",
+   "mm": "ပေါ်တို"
+  },
+  "152": {
+   "en": "FC Twente",
+   "abbr": "TWE",
+   "mm": "ထွမ်တေး"
+  },
+  "153": {
+   "en": "FC Utrecht",
+   "abbr": "UTR",
+   "mm": "ယူထရက်ချ်"
+  },
+  "436": {
+   "en": "Fenerbahce",
+   "abbr": "FEN",
+   "mm": "ဖီနာဘာချီ"
+  },
+  "622": {
+   "en": "Ferencvaros",
+   "abbr": "FER",
+   "mm": "ဖီရန်စဗာရို့စ်"
+  },
+  "142": {
+   "en": "Feyenoord Rotterdam",
+   "abbr": "FEY",
+   "mm": "ဖီယင်နော့"
+  },
+  "109": {
+   "en": "Fiorentina",
+   "abbr": "FIO",
+   "mm": "ဖီအိုရင်တီးနား"
+  },
+  "143": {
+   "en": "Fortuna Sittard",
+   "abbr": "FOR",
+   "mm": "ဖော်ကျူနာစစ်တာ့ဒ်"
+  },
+  "4057": {
+   "en": "Frosinone",
+   "abbr": "FRO",
+   "mm": "ဖရိုစီနိုနီ"
+  },
+  "370": {
+   "en": "Fulham",
+   "abbr": "FUL",
+   "mm": "ဖူလ်ဟမ်"
+  },
+  "432": {
+   "en": "Galatasaray",
+   "abbr": "GAL",
+   "mm": "ဂါလာတာဆာရေး"
+  },
+  "3263": {
+   "en": "Genoa",
+   "abbr": "GEN",
+   "mm": "ဂျီနိုအာ"
+  },
+  "2922": {
+   "en": "Getafe",
+   "abbr": "GET",
+   "mm": "ဂီတာဖေး"
+  },
+  "3699": {
+   "en": "Gil Vicente",
+   "abbr": "GVFC",
+   "mm": "ဂီလ်ဗီဆင်တေး"
+  },
+  "3706": {
+   "en": "Go Ahead Eagles",
+   "abbr": "GAE",
+   "mm": "ဂိုးအဟက်အီးဂဲလ်"
+  },
+  "127": {
+   "en": "Hamburg SV",
+   "abbr": "HSV",
+   "mm": "ဟမ်းဘတ်"
+  },
+  "13083": {
+   "en": "Hapoel Be'er",
+   "abbr": "HBE",
+   "mm": "ဟာပိုရယ်ဘီယာရှီဗာ"
+  },
+  "146": {
+   "en": "Heerenveen",
+   "abbr": "HEE",
+   "mm": "ဟီရန်ဗိန်း"
+  },
+  "306": {
+   "en": "Hull City",
+   "abbr": "HUL",
+   "mm": "ဟားလ်စီးတီး"
+  },
+  "110": {
+   "en": "Internazionale",
+   "abbr": "INT",
+   "mm": "အင်တာ"
+  },
+  "373": {
+   "en": "Ipswich Town",
+   "abbr": "IPS",
+   "mm": "အစ်ဝစ်ချ်"
+  },
+  "11505": {
+   "en": "Jagiellonia Bialystok",
+   "abbr": "JAG",
+   "mm": "ဂျာဂီလိုနီယာ"
+  },
+  "111": {
+   "en": "Juventus",
+   "abbr": "JUV",
+   "mm": "ဂျူဗင်တပ်စ်"
+  },
+  "4411": {
+   "en": "LASK Linz",
+   "abbr": "LAS",
+   "mm": "လင့်ဇ်"
+  },
+  "112": {
+   "en": "Lazio",
+   "abbr": "LAZ",
+   "mm": "လာဇီယို"
+  },
+  "3236": {
+   "en": "Le Havre AC",
+   "abbr": "HAC",
+   "mm": "လဟာဗေး"
+  },
+  "2697": {
+   "en": "Le Mans",
+   "abbr": "MNS",
+   "mm": "လမန်း"
+  },
+  "113": {
+   "en": "Lecce",
+   "abbr": "LEC",
+   "mm": "လက်ချီ"
+  },
+  "2990": {
+   "en": "Lech Poznan",
+   "abbr": "LECH",
+   "mm": "ပိုဇနန်"
+  },
+  "357": {
+   "en": "Leeds United",
+   "abbr": "LEE",
+   "mm": "လိဒ်စ်ယူနိုက်တက်"
+  },
+  "175": {
+   "en": "Lens",
+   "abbr": "RCL",
+   "mm": "လန့်စ်"
+  },
+  "1538": {
+   "en": "Levante",
+   "abbr": "LEV",
+   "mm": "လီဗန်တေး"
+  },
+  "490": {
+   "en": "Levski Sofia",
+   "abbr": "LEV",
+   "mm": "လက်ဗ်စကီဆိုဖီယာ"
+  },
+  "166": {
+   "en": "Lille",
+   "abbr": "LILL",
+   "mm": "လိုင်လီ"
+  },
+  "987": {
+   "en": "Lillestrom",
+   "abbr": "LSK",
+   "mm": "လိလ်စထရုမ်း"
+  },
+  "364": {
+   "en": "Liverpool",
+   "abbr": "LIV",
+   "mm": "လီဗာပူး"
+  },
+  "273": {
+   "en": "Lorient",
+   "abbr": "LOR",
+   "mm": "လိုရီယန့်"
+  },
+  "167": {
+   "en": "Lyon",
+   "abbr": "LYON",
+   "mm": "လိုင်ယွန်"
+  },
+  "2950": {
+   "en": "Mainz",
+   "abbr": "M05",
+   "mm": "မိန့်ဇ်"
+  },
+  "382": {
+   "en": "Manchester City",
+   "abbr": "MNC",
+   "mm": "မန်စီးတီး"
+  },
+  "360": {
+   "en": "Manchester United",
+   "abbr": "MAN",
+   "mm": "မန်ယူ"
+  },
+  "552": {
+   "en": "Maritimo",
+   "abbr": "MAR",
+   "mm": "မာရီတီမို"
+  },
+  "176": {
+   "en": "Marseille",
+   "abbr": "OLM",
+   "mm": "မာဆေး"
+  },
+  "4007": {
+   "en": "Monza",
+   "abbr": "MON",
+   "mm": "မွန်ဇာ"
+  },
+  "3696": {
+   "en": "Moreirense",
+   "abbr": "MFC",
+   "mm": "မိုရေးရင်ဆီ"
+  },
+  "99": {
+   "en": "Málaga",
+   "abbr": "MCF",
+   "mm": "မာလာဂါ"
+  },
+  "147": {
+   "en": "NEC Nijmegen",
+   "abbr": "NEC",
+   "mm": "နိုင်မီဂန်"
+  },
+  "3362": {
+   "en": "NK Celje",
+   "abbr": "NKC",
+   "mm": "ဆဲလ်ယဲ"
+  },
+  "114": {
+   "en": "Napoli",
+   "abbr": "NAP",
+   "mm": "နာပိုလီ"
+  },
+  "361": {
+   "en": "Newcastle United",
+   "abbr": "NEW",
+   "mm": "နယူးကာဆယ်"
+  },
+  "2502": {
+   "en": "Nice",
+   "abbr": "NICE",
+   "mm": "နိစ်"
+  },
+  "393": {
+   "en": "Nottingham Forest",
+   "abbr": "NFO",
+   "mm": "နော်တင်ဟမ်ဖောရက်စ်"
+  },
+  "1010": {
+   "en": "OFI Crete",
+   "abbr": "OFI",
+   "mm": "အိုအက်ဖ်အိုင်ခရီးတ်"
+  },
+  "435": {
+   "en": "Olympiacos",
+   "abbr": "OLY",
+   "mm": "အိုလံပီယာကို့စ်"
+  },
+  "617": {
+   "en": "Omonia Nicosia",
+   "abbr": "OMON",
+   "mm": "အိုမိုနီယာ"
+  },
+  "97": {
+   "en": "Osasuna",
+   "abbr": "OSA",
+   "mm": "အိုဆာဆူနာ"
+  },
+  "2565": {
+   "en": "PEC Zwolle",
+   "abbr": "PEC",
+   "mm": "ဇဝူးလီ"
+  },
+  "148": {
+   "en": "PSV Eindhoven",
+   "abbr": "PSV",
+   "mm": "ပီအက်စ်ဗီ"
+  },
+  "6851": {
+   "en": "Paris FC",
+   "abbr": "PAR",
+   "mm": "ပဲရစ်အက်ဖ်စီ"
+  },
+  "160": {
+   "en": "Paris Saint-Germain",
+   "abbr": "PSG",
+   "mm": "ပီအက်စ်ဂျီ"
+  },
+  "115": {
+   "en": "Parma",
+   "abbr": "PAR",
+   "mm": "ပါးမား"
+  },
+  "11420": {
+   "en": "RB Leipzig",
+   "abbr": "RBL",
+   "mm": "လိုက်ပ်ဇစ်"
+  },
+  "2790": {
+   "en": "RB Salzburg",
+   "abbr": "SLZ",
+   "mm": "ဆဲလ်ဇ်ဘတ်"
+  },
+  "87": {
+   "en": "Racing Santander",
+   "abbr": "RAC",
+   "mm": "ရေးစင်းဆန်တန်ဒါး"
+  },
+  "101": {
+   "en": "Rayo Vallecano",
+   "abbr": "RAY",
+   "mm": "ရာယိုဗယ်လီကာနို"
+  },
+  "244": {
+   "en": "Real Betis",
+   "abbr": "BET",
+   "mm": "ရီးရဲလ်ဘက်တစ်"
+  },
+  "86": {
+   "en": "Real Madrid",
+   "abbr": "RMA",
+   "mm": "ရီးယဲလ်"
+  },
+  "89": {
+   "en": "Real Sociedad",
+   "abbr": "RSO",
+   "mm": "ရီးရဲလ်ဆိုစီဒက်"
+  },
+  "3822": {
+   "en": "Rio Ave",
+   "abbr": "RAFC",
+   "mm": "ရီယိုအဲဗီ"
+  },
+  "3736": {
+   "en": "SC Cambuur",
+   "abbr": "CAM",
+   "mm": "ကမ်ဘူး"
+  },
+  "126": {
+   "en": "SC Freiburg",
+   "abbr": "SCF",
+   "mm": "ဖရိုင်းဘတ်"
+  },
+  "3307": {
+   "en": "SC Paderborn 07",
+   "abbr": "SCP",
+   "mm": "ပါဒါဘွန်း"
+  },
+  "3746": {
+   "en": "SK Sturm Graz",
+   "abbr": "STG",
+   "mm": "စတုန်းဂရက်ဇ်"
+  },
+  "10388": {
+   "en": "SV Elversberg",
+   "abbr": "ELV",
+   "mm": "အဲလ်ဗားစ်ဘတ်"
+  },
+  "21922": {
+   "en": "Sabah FK",
+   "abbr": "SAB",
+   "mm": "ဆာဘာ့ခ်"
+  },
+  "12215": {
+   "en": "Santa Clara",
+   "abbr": "CDSC",
+   "mm": "ဆန်တာကလာရာ"
+  },
+  "3997": {
+   "en": "Sassuolo",
+   "abbr": "SAS",
+   "mm": "ဆာဆူအိုလို"
+  },
+  "133": {
+   "en": "Schalke 04",
+   "abbr": "S04",
+   "mm": "ရှော်ကေး"
+  },
+  "243": {
+   "en": "Sevilla",
+   "abbr": "SEV",
+   "mm": "ဆီဗီလာ"
+  },
+  "493": {
+   "en": "Shakhtar Donetsk",
+   "abbr": "SHK",
+   "mm": "ရှက်တာဒိုးနက်စ်"
+  },
+  "494": {
+   "en": "Slavia Prague",
+   "abbr": "SLP",
+   "mm": "ဆလာဗီယာပရက်"
+  },
+  "521": {
+   "en": "Slovan Bratislava",
+   "abbr": "SLB",
+   "mm": "ဆလိုဗန်ဘရာတစ်စလာဗာ"
+  },
+  "433": {
+   "en": "Sparta Prague",
+   "abbr": "SPP",
+   "mm": "စပါတာပရက်"
+  },
+  "151": {
+   "en": "Sparta Rotterdam",
+   "abbr": "SPA",
+   "mm": "စပါတာရော့တာဒမ်"
+  },
+  "2250": {
+   "en": "Sporting CP",
+   "abbr": "SCP",
+   "mm": "စပေါ်တင်း"
+  },
+  "169": {
+   "en": "Stade Rennais",
+   "abbr": "REN",
+   "mm": "ရန်းစ်"
+  },
+  "180": {
+   "en": "Strasbourg",
+   "abbr": "STR",
+   "mm": "စထရာ့စ်ဘတ်"
+  },
+  "366": {
+   "en": "Sunderland",
+   "abbr": "SUN",
+   "mm": "ဆန်းဒါးလန်း"
+  },
+  "7911": {
+   "en": "TSG Hoffenheim",
+   "abbr": "TSG",
+   "mm": "ဟော့ဖန်ဟိမ်း"
+  },
+  "3735": {
+   "en": "Telstar",
+   "abbr": "TEL",
+   "mm": "တဲလ်စတာ"
+  },
+  "239": {
+   "en": "Torino",
+   "abbr": "TOR",
+   "mm": "တိုရီနို"
+  },
+  "21615": {
+   "en": "Torreense",
+   "abbr": "TOR",
+   "mm": "တိုရေးရင်ဆီ"
+  },
+  "367": {
+   "en": "Tottenham Hotspur",
+   "abbr": "TOT",
+   "mm": "စပါး"
+  },
+  "179": {
+   "en": "Toulouse",
+   "abbr": "TOU",
+   "mm": "တူးလူး"
+  },
+  "170": {
+   "en": "Troyes",
+   "abbr": "TRY",
+   "mm": "ထရွာ"
+  },
+  "118": {
+   "en": "Udinese",
+   "abbr": "UDI",
+   "mm": "အူဒီနီဆီ"
+  },
+  "5807": {
+   "en": "Union St.-Gilloise",
+   "abbr": "USG",
+   "mm": "ယူနီယံစိန့်ဂီလွိုင်"
+  },
+  "94": {
+   "en": "Valencia",
+   "abbr": "VAL",
+   "mm": "ဗလန်စီယာ"
+  },
+  "17530": {
+   "en": "Venezia",
+   "abbr": "VEN",
+   "mm": "ဗင်နီဇီယာ"
+  },
+  "134": {
+   "en": "VfB Stuttgart",
+   "abbr": "VFB",
+   "mm": "စတုဂတ်"
+  },
+  "510": {
+   "en": "Viking FK",
+   "abbr": "VIK",
+   "mm": "ဗိုက်ကင်းအက်ဖ်ကေ"
+  },
+  "11706": {
+   "en": "Viktoria Plzen",
+   "abbr": "PLZ",
+   "mm": "ပယ်လ်ဇင်"
+  },
+  "102": {
+   "en": "Villarreal",
+   "abbr": "VIL",
+   "mm": "ဗီလာရီးရဲလ်"
+  },
+  "5309": {
+   "en": "Vitória de Guimaraes",
+   "abbr": "VSC",
+   "mm": "ဂီမာရေးရှ်"
+  },
+  "137": {
+   "en": "Werder Bremen",
+   "abbr": "SVW",
+   "mm": "ဝါဒါဘရီမင်"
+  },
+  "156": {
+   "en": "Willem II",
+   "abbr": "WIL",
+   "mm": "ဝီလျံနှစ်"
+  }
+ }
+}
