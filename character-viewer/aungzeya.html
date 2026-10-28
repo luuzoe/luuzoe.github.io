@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Aung Zeya Placeholder Viewer</title>
+<style>
+  html,body{margin:0;height:100%;overflow:hidden;background:#e8e8e8;font-family:system-ui,sans-serif}
+  #c{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none}
+  #bar{position:fixed;left:0;right:0;bottom:0;padding:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;background:rgba(255,255,255,.85)}
+  button{font-size:16px;padding:10px 18px;border:0;border-radius:999px;background:#222;color:#fff}
+  button.off{background:#888}
+  #status{position:fixed;top:12px;left:0;right:0;text-align:center;font-size:15px;color:#333;background:rgba(255,255,255,.8);padding:8px}
+  #hint{position:fixed;top:48px;left:0;right:0;text-align:center;font-size:13px;color:#666}
+</style>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="status">တင်နေသည်… (3.6 MB)</div>
+<div id="hint">လက်နဲ့ ဆွဲ လှည့်ကြည့် · နှစ်ချောင်းနဲ့ ဖြန့်/ကျုံ့ ချဲ့ကြည့်</div>
+<div id="bar">
+  <button id="idleBtn">🧍 ရပ်နေ (Idle)</button>
+  <button id="walkBtn" class="off">🚶 လမ်းလျှောက် (Walk)</button>
+  <button id="rotBtn">🔄 အလိုလှည့်: ဖွင့်</button>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+const status = document.getElementById('status');
+const canvas = document.getElementById('c');
+const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xe8e8e8);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x888888, 1.2));
+const sun = new THREE.DirectionalLight(0xffffff, 2.0);
+sun.position.set(2, 4, 3);
+scene.add(sun);
+const grid = new THREE.GridHelper(4, 20, 0x999999, 0xcccccc);
+scene.add(grid);
+const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 0.01, 100);
+camera.position.set(0, 0.8, 2);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0.5, 0);
+controls.autoRotate = true;
+controls.autoRotateSpeed = 1.5;
+controls.enableDamping = true;
+let mixer = null, clips = {}, current = null, currentName = '';
+const clock = new THREE.Clock();
+function playAnim(name) {
+  if (!mixer || !clips[name]) return;
+  if (current) current.stop();
+  current = mixer.clipAction(clips[name]);
+  current.play();
+  currentName = name;
+  status.textContent = (name === 'walk' ? 'လမ်းလျှောက်နေသည် ✓' : 'ရပ်နေသည် ✓') + ' — animation: ' + name;
+  document.getElementById('idleBtn').className = name === 'idle' ? '' : 'off';
+  document.getElementById('walkBtn').className = name === 'walk' ? '' : 'off';
+}
+new GLTFLoader().load('aung-zeya-placeholder.glb', (gltf) => {
+  const model = gltf.scene;
+  scene.add(model);
+  const box = new THREE.Box3().setFromObject(model);
+  const size = new THREE.Vector3(), center = new THREE.Vector3();
+  box.getSize(size); box.getCenter(center);
+  controls.target.copy(center);
+  const dist = Math.max(size.x, size.y, size.z) * 2.4;
+  camera.position.set(center.x + dist*0.4, center.y + dist*0.45, center.z + dist);
+  camera.lookAt(center);
+  grid.position.y = box.min.y;
+  if (gltf.animations && gltf.animations.length) {
+    mixer = new THREE.AnimationMixer(model);
+    gltf.animations.forEach(c => { clips[c.name] = c; });
+    playAnim(clips['idle'] ? 'idle' : gltf.animations[0].name);
+  } else {
+    status.textContent = 'ပုံပေါ်ပါပြီ (animation မရှိ)';
+  }
+}, (xhr) => {
+  if (xhr.total) status.textContent = 'တင်နေသည်… ' + Math.round(xhr.loaded/xhr.total*100) + '%';
+}, (err) => {
+  status.textContent = 'ဖွင့်မရပါ: ' + (err && err.message ? err.message : err);
+  console.error(err);
+});
+document.getElementById('idleBtn').onclick = () => playAnim('idle');
+document.getElementById('walkBtn').onclick = () => playAnim('walk');
+document.getElementById('rotBtn').onclick = (e) => {
+  controls.autoRotate = !controls.autoRotate;
+  e.target.textContent = controls.autoRotate ? '🔄 အလိုလှည့်: ဖွင့်' : '🔄 အလိုလှည့်: ပိတ်';
+  e.target.className = controls.autoRotate ? '' : 'off';
+};
+addEventListener('resize', () => {
+  camera.aspect = innerWidth/innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+(function animate(){
+  requestAnimationFrame(animate);
+  const dt = clock.getDelta();
+  if (mixer) mixer.update(dt);
+  controls.update();
+  renderer.render(scene, camera);
+})();
+</script>
+</body>
+</html>
